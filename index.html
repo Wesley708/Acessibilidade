@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -25,13 +26,16 @@
         .alto-contraste{
             background-color: black;
             color: white;
+            filter: contrast(500%);
         }
+        
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    
     <div>
         <button id="preto-e-branco" ><img class="icone" src="img/preto_e_branco.png" alt="" srcset=""></button>
         <button id="aumentar-texto"><img class="icone" src="img/a_mais.png" alt=""></button>
@@ -43,6 +47,18 @@
     <h1>Teste de ferramentas ACD</h1>
     <a href="#">clique aqui</a>
     <img class="image" src="img/ACD.jpg" alt="">
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget();
+      </script>
+
 </body>
 <script type="text/javascript">
     window.onload = function(){
@@ -81,4 +97,5 @@
         }
     );
 </script>
+
 </html>
